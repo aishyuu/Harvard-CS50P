@@ -24,8 +24,10 @@ def main():
     #Breakfast time (7am and 8am)
     if minutes >= 420 and minutes <= 480:
         print("breakfast time")
+    #Lunch time (12pm and 1pm)
     elif minutes >= 720 and minutes <= 780:
         print("lunch time")
+    #Dinner time (6pm and 7pm)
     elif minutes >= 1080 and minutes <= 1140:
         print("dinner time")
     
