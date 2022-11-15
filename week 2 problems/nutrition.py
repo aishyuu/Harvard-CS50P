@@ -26,11 +26,13 @@ fruits = {
 }
 
 def main():
+    # Verify if the user writes something that's in the dict
     while True:
         user_fruit = input("Item: ")
         if user_fruit.lower() in fruits:
             break
-
+    
+    #Print the result
     print(f"Calories: {fruits[user_fruit.lower()]}")
 
 main()
