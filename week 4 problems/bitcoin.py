@@ -24,7 +24,7 @@ except IndexError:
 except ValueError:
     print("Command line argument is not a number")
     sys.exit()
-    
+
 try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     bitcoin_json = response.json()
