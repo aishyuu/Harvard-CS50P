@@ -22,6 +22,9 @@ def main():
         if len(sys.argv) < 2:
             print("Too few arguments")
             raise ValueError
+        if sys.argv[1].endswith(".py") == False:
+            print("This is not a python file")
+            raise ValueError
     except ValueError:
         sys.exit()
 
